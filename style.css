@@ -518,3 +518,62 @@ input:checked + .slider:before { transform: translateX(26px); }
         justify-content: center;
     }
 }
+/* Mobile Responsive Fixes */
+@media (max-width: 600px) {
+    /* Self Cooking Banner Alignment */
+    .special-items-grid {
+        padding: 10px;
+    }
+
+    .special-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    .special-item span:last-child {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .add-btn-dark {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 25px; /* Icons ke beech space */
+        margin-top: 20px;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Menu Content Grid */
+    .menu-content.active {
+        grid-template-columns: 1fr; /* Sirf 1 column */
+        gap: 1rem;
+    }
+
+    /* Hero Section text size */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Section titles */
+    .experience-header h2 {
+        font-size: 1.6rem;
+    }
+}
